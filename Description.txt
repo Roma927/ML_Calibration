@@ -1,0 +1,48 @@
+The project trained and calibrated various machine learning models to enhance prediction accuracy and reliability. The following models were evaluated: **RandomForestClassifier**, **SVC**, **LogisticRegression**, **MLPClassifier**, **GradientBoostingClassifier**, **AdaBoostClassifier**, **GaussianNB**, **DecisionTreeClassifier**, and **KNeighborsClassifier**. Each model was calibrated using two methods: *sigmoid* and *isotonic*. Below are the key results for accuracy before and after calibration:
+
+1. **RandomForestClassifier**:
+   - Pre-calibration Accuracy: **57.50%**
+   - Post-calibration (Sigmoid): **63.75%**
+   - Post-calibration (Isotonic): **71.25%**
+
+2. **SVC**:
+   - Pre-calibration Accuracy: **40.00%**
+   - Post-calibration (Sigmoid): **43.75%**
+   - Post-calibration (Isotonic): **47.50%**
+
+3. **LogisticRegression**:
+   - Pre-calibration Accuracy: **43.75%**
+   - Post-calibration (Sigmoid): **48.75%**
+   - Post-calibration (Isotonic): **51.25%**
+
+4. **MLPClassifier**:
+   - Pre-calibration Accuracy: **40.00%**
+   - Post-calibration (Sigmoid): **41.25%**
+   - Post-calibration (Isotonic): **47.50%**
+
+5. **GradientBoostingClassifier**:
+   - Pre-calibration Accuracy: **53.75%**
+   - Post-calibration (Sigmoid): **55.00%**
+   - Post-calibration (Isotonic): **62.50%**
+
+6. **AdaBoostClassifier**:
+   - Pre-calibration Accuracy: **45.00%**
+   - Post-calibration (Sigmoid): **40.00%**
+   - Post-calibration (Isotonic): **40.00%**
+
+7. **GaussianNB**:
+   - Pre-calibration Accuracy: **37.50%**
+   - Post-calibration (Sigmoid): **48.75%**
+   - Post-calibration (Isotonic): **53.75%**
+
+8. **DecisionTreeClassifier**:
+   - Pre-calibration Accuracy: **58.75%**
+   - Post-calibration (Sigmoid): **58.75%**
+   - Post-calibration (Isotonic): **58.75%**
+
+9. **KNeighborsClassifier**:
+   - Pre-calibration Accuracy: **40.00%**
+   - Post-calibration (Sigmoid): **41.25%**
+   - Post-calibration (Isotonic): **40.00%**
+
+Among all models, the **RandomForestClassifier** showed the highest improvement in accuracy post-calibration, particularly with isotonic calibration, achieving **71.25%** accuracy. The **GradientBoostingClassifier** also performed well after isotonic calibration, with an accuracy of **62.50%**. Reliability plots confirmed that calibration enhanced confidence in predicted probabilities, with isotonic calibration generally outperforming sigmoid calibration. Some models, like **AdaBoostClassifier** and **DecisionTreeClassifier**, did not show improvement post-calibration, highlighting the need for further tuning or addressing issues such as label imbalance. Overall, the calibrated models demonstrated better reliability and predictive accuracy.
