@@ -109,7 +109,7 @@ The following scikit-learn models are trained and evaluated:
    python Main.py
    ```
 
-4. **Optional Flask API:**
+4. **Flask API:**
    - Modify and run the `Server.py` script to serve the models via a REST API.
 
 ---
