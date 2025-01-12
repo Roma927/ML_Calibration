@@ -95,21 +95,16 @@ The following scikit-learn models are trained and evaluated:
 #### **Installation and Setup**
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
-   cd project
+   git clone https://github.com/Roma927/ML_Calibration
+   cd ML_Calibration
    ```
 
-2. **Install required Python packages:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run the training and evaluation script:**
+2. **Run the training and evaluation script:**
    ```bash
    python Main.py
    ```
 
-4. **Flask API:**
+3. **Flask API:**
    - Modify and run the `Server.py` script to serve the models via a REST API.
 
 ---
